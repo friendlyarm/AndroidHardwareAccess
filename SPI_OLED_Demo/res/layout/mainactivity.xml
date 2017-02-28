@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+    <!-- <linearlayout android:focusable="true" android:focusableInTouchMode="true" android:layout_height="0px" android:layout_width="0px"> -->
+	<EditText android:id="@+id/toEditor" android:layout_width="fill_parent"
+		android:layout_height="200dip" android:inputType="textMultiLine"
+		android:singleLine="false"
+       android:editable="true" android:gravity="top" />
+    <!--  </linearlayout> -->  
+    
+	<Button android:id="@+id/cleanButton" android:layout_width="fill_parent"
+		android:layout_height="40dip" android:text="@string/cleanButtonLabel">
+	</Button>
+	
+	<Button android:id="@+id/backButton" android:layout_width="fill_parent"
+		android:layout_height="40dip" android:text="@string/backButtonText">
+	</Button>
+
+</LinearLayout>

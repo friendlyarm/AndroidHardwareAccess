@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SPI-OLED</string>
+	<string name="MainActivityTitle">SPI-OLED</string>
+    <string name="backButtonText">Back</string>
+    <string name="cleanButtonLabel">Clear</string>
+</resources>

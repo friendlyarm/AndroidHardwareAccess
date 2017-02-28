@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+android:id="@+id/widget28"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="#ffffffff"
+android:orientation="vertical"
+xmlns:android="http://schemas.android.com/apk/res/android">
+
+<EditText
+android:id="@+id/txtData"
+android:layout_width="fill_parent"
+android:layout_height="180px"
+android:textSize="18sp"  />
+
+<Button
+android:id="@+id/btnWriteSDFile"
+android:layout_width="143px"
+android:layout_height="44px"
+android:text="@string/write_sd_file"  />
+
+<Button
+android:id="@+id/btnClearScreen"
+android:layout_width="141px"
+android:layout_height="42px"
+android:text="@string/clear_screen"  />
+
+<Button
+android:id="@+id/btnReadSDFile"
+android:layout_width="140px"
+android:layout_height="42px"
+android:text="@string/read_sd_file"  />
+
+<Button
+android:id="@+id/btnClose"
+android:layout_width="141px"
+android:layout_height="43px"
+android:text="@string/close" />
+
+</LinearLayout>

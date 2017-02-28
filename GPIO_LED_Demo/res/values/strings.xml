@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GPIO Demo</string>
+	<string name="MainActivityTitle">GPIO Demo</string>
+	<string name="ledtext">LED</string>
+</resources>

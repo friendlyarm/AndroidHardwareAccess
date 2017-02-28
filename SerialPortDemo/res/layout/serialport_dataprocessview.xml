@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+    <TextView android:id="@+id/label2" android:layout_width="fill_parent" android:layout_height="wrap_content"
+			 android:text="@string/toDataLabel" />
+    
+    <!-- <linearlayout android:focusable="true" android:focusableInTouchMode="true" android:layout_height="0px" android:layout_width="0px"> -->
+	<EditText android:id="@+id/toEditor" android:layout_width="fill_parent"
+		android:layout_height="60dip" android:inputType="textMultiLine"
+		android:singleLine="false"
+       android:editable="true" android:gravity="top" />
+    <!--  </linearlayout> -->  
+    
+	<Button android:id="@+id/sendButton" android:layout_width="fill_parent"
+		android:layout_height="40dip" android:text="@string/sendButtonLabel">
+	</Button>
+		
+	<TextView android:id="@+id/label1" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="@string/fromDataLabel"/>
+	
+	<com.friendlyarm.Utils.BorderScrollView android:layout_width="fill_parent"
+			android:layout_height="220dip" android:background="#FFFFFF"  
+			android:id="@+id/scroolView"  android:layout_weight="1">
+		<TextView
+			android:id="@+id/fromTextView" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:singleLine="false"
+			android:gravity="top" android:background="#FFFFFF"
+			android:textColor="#000000" 
+			/>
+	</com.friendlyarm.Utils.BorderScrollView>
+	
+</LinearLayout>

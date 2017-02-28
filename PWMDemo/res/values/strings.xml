@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PWM Demo</string>
+    <string name="PWMTestingActivityTitle">PWM Testing: /dev/pwm</string>
+    <string name="addBtnText">+</string>
+	<string name="subBtnText">-</string>
+	<string name="fInitValue">1000</string>
+	<string name="frequencyText">Frequency: </string>
+    <string name="pwmPlay">Start</string>
+    <string name="pwmStop">Stop</string>
+    <string name="backButtonText">Back</string>
+</resources>

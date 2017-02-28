@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+>
+
+<TextView 
+    android:id="@+id/listTextView1"
+    android:layout_width="0dip" 
+    android:layout_height="wrap_content" 
+    android:layout_weight="1"
+    android:textSize="18px"
+    android:paddingLeft="20dip"
+/>
+
+<TextView 
+    android:id="@+id/listTextView2"
+    android:layout_width="0dip" 
+    android:layout_height="wrap_content" 
+    android:layout_weight="1"
+    android:textSize="18px"
+    android:gravity="right"
+    android:textColor="#FF7F00"
+    android:paddingRight="20dip"
+/>
+
+</LinearLayout>
