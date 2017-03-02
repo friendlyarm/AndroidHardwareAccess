@@ -17,7 +17,7 @@ Examples for accessing FriendlyELEC's development board hardware on android.
 * LED  
 * LCD 1602 (I2C)  
 * OLED (SPI)  
-* I2C, SPI, GPIO are accessible.  
+
 I2C, SPI, GPIO are accessible.
 
 ![image](https://github.com/friendlyarm/AndroidHardwareAccess/raw/master/SPI_OLED_Demo/Smart4418SDK%2BOLED.png)
