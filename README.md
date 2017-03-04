@@ -3,7 +3,8 @@ Examples for accessing FriendlyELEC's development board hardware on android.
 
 ## Applicable Boards & OS
 
-* Smart4418 SDK: Android 5
+* NanoPC-T3/NanoPi-M3: Android 5
+* Smart4418 SDK/NanoPC-T2/NanoPi-M2/NanoPi S2: Android 5, Android 4.4
 * Tiny4412: Android 4.2, Android 5
 * Tiny210/Smart210/Mini210: Android 4.2
 * Tiny6410/Mini6410: Android 2.3
