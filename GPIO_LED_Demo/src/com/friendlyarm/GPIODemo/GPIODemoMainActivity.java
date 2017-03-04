@@ -98,11 +98,19 @@ public class GPIODemoMainActivity extends Activity {
 		setContentView(R.layout.gpiodemo_main);
 		setTitle("GPIO Demo");
 
-		if (SystemProperties.get("ro.product.device").contains("nanopi2")) {
+		int boardType = HardwareControler.getBoardType();
+		if (boardType == HardwareControler.Smart4418SDK) {
 			demoGPIOPins.put("GPIOC9", 73);
 			demoGPIOPins.put("GPIOC10", 74);
 			demoGPIOPins.put("GPIOC11", 75);
 			demoGPIOPins.put("GPIOC12", 76);
+		} else if (boardType == HardwareControler.NanoPC_T2 || boardType == HardwareControler.NanoPC_T3) {
+			demoGPIOPins.put("Pin17", 68);
+			demoGPIOPins.put("Pin18", 71);
+			demoGPIOPins.put("Pin19", 72);
+			demoGPIOPins.put("Pin20", 88);
+			demoGPIOPins.put("Pin21", 92);
+			demoGPIOPins.put("Pin22", 58);
 		} else if (SystemProperties.get("ro.build.version.release").contains("4.1.2")) {
 			demoGPIOPins.put("LED 1", 281);
 			demoGPIOPins.put("LED 2", 282);

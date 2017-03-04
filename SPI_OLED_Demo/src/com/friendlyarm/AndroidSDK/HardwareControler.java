@@ -85,7 +85,27 @@ public class HardwareControler
     public static final int NanoPC_T2 = S5P4418_BASE+1;
     public static final int NanoPi_S2 = S5P4418_BASE+2;
     public static final int Smart4418 = S5P4418_BASE+3;
+    public static final int NanoPi2_Fire = S5P4418_BASE+4;
+    public static final int NanoPi_M2 = S5P4418_BASE+5;
+    public static final int NanoPi_M2A = S5P4418_BASE+7;
     public static final int Smart4418SDK = S5P4418_BASE+0x103;
+    public static final int S5P4418_MAX = Smart4418SDK;
+    public static final int S5P6818_BASE = 6818;
+    public static final int NanoPC_T3 = S5P6818_BASE+1;
+    public static final int NanoPi_S3 = S5P6818_BASE+2;
+    public static final int Smart6818 = S5P6818_BASE+3;
+    public static final int NanoPi_M3 = S5P6818_BASE+7;
+    public static final int S5P6818_MAX = NanoPi_M3;
+
+    static public boolean isS5P4418Board() {
+        int boardtype = getBoardType();
+        return boardtype>=S5P4418_BASE && boardtype<=S5P4418_MAX;
+    }
+
+    static public boolean isS5P6818Board() {
+        int boardtype = getBoardType();
+        return boardtype>=S5P6818_BASE && boardtype<=S5P6818_MAX;
+    }
     
     static {
         try {

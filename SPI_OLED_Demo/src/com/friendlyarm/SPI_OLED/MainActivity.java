@@ -23,8 +23,12 @@ public class MainActivity extends Activity implements OnClickListener {
 	private EditText toEditor = null;
 	
     private final String devName = "/dev/spidev0.0";   /*For S5P4418*/
-    private final int gpioPin_For_DC = 75;   			/*GPIOC11 on Smart4418*/
-    private final int gpioPin_For_Reset = 74;          /*GPIOC10 on Smart4418*/
+    //private final int gpioPin_For_DC = 75;   			/*GPIOC11 on Smart4418*/
+    //private final int gpioPin_For_Reset = 74;          /*GPIOC10 on Smart4418*/
+    
+    private final int gpioPin_For_DC = 68;   			/*GPIOC4 on T3, PIn17*/
+    private final int gpioPin_For_Reset = 71;          /*GPIOC7 on T3, Pin18*/
+    
     OLED oled;
 
     private Timer timer = new Timer();

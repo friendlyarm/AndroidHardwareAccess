@@ -8,6 +8,7 @@ import android.app.Activity;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -19,8 +20,7 @@ public class PWMTestingActivity extends Activity implements OnClickListener {
 	Button btnSub;
 	Button btnAdd;
 	
-	final int smart4418PWMGPIOPin = 97; // 97, 77, 78
-	private int boardType = HardwareControler.getBoardType();
+	final int smart4418PWMGPIOPin = 97; //GPIOD1, Smart4418/NanoPC-T2/NanoPC-T3
 	
     /** Called when the activity is first created. */
     @Override
@@ -42,8 +42,10 @@ public class PWMTestingActivity extends Activity implements OnClickListener {
     {
         int f;
         f = Integer.valueOf(textEditor.getText().toString()).intValue();
+        int boardType = HardwareControler.getBoardType();
+        Log.d("PWMDemo", "boardtype = " + boardType);
         
-        if (boardType == HardwareControler.Smart4418SDK) {
+        if (HardwareControler.isS5P4418Board() || HardwareControler.isS5P6818Board()) {
             if (hw.PWMPlayEx(smart4418PWMGPIOPin, f) != 0) {
                 CommonFuncs.showAlertDialog(this,"Fail to play!");
             }
@@ -56,7 +58,7 @@ public class PWMTestingActivity extends Activity implements OnClickListener {
     
     private void stopPWM()
     {
-        if (boardType == HardwareControler.Smart4418SDK) {
+        if (HardwareControler.isS5P4418Board() || HardwareControler.isS5P6818Board()) {
         	if (hw.PWMStopEx(smart4418PWMGPIOPin) != 0) {
     			CommonFuncs.showAlertDialog(this,"Fail to stop!");
     		}
